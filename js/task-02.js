@@ -22,11 +22,9 @@ const sortIngredientsArr = ingredients.map (ingredient => {
   elemOfIngredientsArr.textContent = ingredient;
 
   itemsArr.push(elemOfIngredientsArr);
-  console.log(elemOfIngredientsArr);
 });
-console.log(itemsArr);
 
 ingredientsList.append(...itemsArr);
-console.log(ingredientsList);
+
 
 
