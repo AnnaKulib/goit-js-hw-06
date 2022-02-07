@@ -6,6 +6,7 @@ const defaultInputValue = 'Anonymous';
 inputValue.addEventListener('input', changeTextOnOutput);
 
 function changeTextOnOutput(event) {
-    outputValue.textContent = event.currentTarget.value !== "" ? event.currentTarget.value : defaultText; 
+    const value = event.currentTarget.value.trim();
+    outputValue.textContent = value ? value : defaultText; 
 console.log(event.currentTarget.value);
 }
