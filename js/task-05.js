@@ -7,6 +7,5 @@ inputValue.addEventListener('input', changeTextOnOutput);
 
 function changeTextOnOutput(event) {
     const value = event.currentTarget.value.trim();
-    outputValue.textContent = value ? value : defaultText; 
-console.log(event.currentTarget.value);
+    outputValue.textContent = value ? value : defaultInputValue; 
 }
